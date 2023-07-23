@@ -1,0 +1,46 @@
+@import url("./normalize.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: cadetblue;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 30px;
+  gap: 30px;
+}
+
+.note,
+.add-note {
+  height: 200px;
+  border: none;
+  border-radius: 20px;
+}
+
+.note {
+  box-sizing: border-box;
+  padding: 1rem;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  resize: none;
+  line-height: 1.5;
+  overflow: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-note {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 8rem;
+  cursor: pointer;
+}
